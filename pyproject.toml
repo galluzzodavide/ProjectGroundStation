@@ -1,0 +1,17 @@
+[build-system]
+requires = ["maturin>=1.6,<2.0"]
+build-backend = "maturin"
+
+[project]
+name = "simplified-epd"
+version = "0.1.0"
+description = "Minimal encoder-processor-decoder pipeline with Python + Rust (PyO3)"
+authors = [{ name = "You", email = "you@example.com" }]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = []
+
+[tool.maturin]
+python-packages = ["epd"]
+module-name = "processor_rs"
+features = ["pyo3/extension-module"]
