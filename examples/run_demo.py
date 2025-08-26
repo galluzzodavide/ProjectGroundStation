@@ -11,3 +11,5 @@ if __name__ == "__main__":
     print("Predictions after 5 steps:")
     for k, v in preds.items():
         print(f"  {k}: {v:.3f}")
+
+#prova prova prova
